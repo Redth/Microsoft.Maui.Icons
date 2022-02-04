@@ -30,10 +30,11 @@ public static class MauiProgram
 Using the font glyph:
 
 ```xml
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:fluent="clr-namespace:Microsoft.Maui.Icons.Fluent;assembly=Microsoft.Maui.Icons.Fluent"
-             x:Class="MyApp.MainPage">
+<ContentPage
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:fluent="http://schemas.microsoft.com/dotnet/2021/maui/icons/fluent"
+	x:Class="MyApp.MainPage">
 	<Grid>
 		<Image WidthRequest="40" HeightRequest="40">
 			<Image.Source>
