@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ItemGroup>
-		<MauiFont Include="$(MSBuildThisFileDirectory)\*.ttf" />
+		<MauiFont
+			Condition=" '$(ExcludeIconsFluentFilled)' != 'True' "
+			Include="$(MSBuildThisFileDirectory)\FluentSystemIcons-Filled.ttf" />
+		<MauiFont
+			Condition=" '$(ExcludeIconsFluentRegular)' != 'True' "
+			Include="$(MSBuildThisFileDirectory)\FluentSystemIcons-Regular.ttf" />
 	</ItemGroup>
 </Project>
