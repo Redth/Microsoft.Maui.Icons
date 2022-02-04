@@ -50,3 +50,16 @@ Using the font glyph:
 	</Grid>
 </ContentPage>
 ```
+
+## Excluding Fonts
+By default both the `Regular` and `Filled` fonts are included, however since they are larger files, you may only want one.  If you want to exclude either one, set the appropriate MSBuild property to `True` in your .csproj file:
+
+```xml
+<PropertyGroup>
+	<!-- Excludes Filled -->
+	<ExcludeIconsFluentFilled>True</ExcludeIconsFluentFilled>	
+	
+	<!-- Excludes Regular -->
+	<ExcludeIconsFluentRegular>True</ExcludeIconsFluentRegular>
+</PropertyGroup>
+```
