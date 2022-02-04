@@ -2,6 +2,9 @@
 
 Simple project to extract glyphs from icon fonts and generate consts for their names and unicode values
 
+![image](https://user-images.githubusercontent.com/271950/152597297-9cdec4a4-33a3-4d6a-8c9e-18be20a0c9e9.png)
+
+
 ## Usage in a .NET MAUI App
 
 You can register your fonts in the `ConfigureFonts` method like below:
